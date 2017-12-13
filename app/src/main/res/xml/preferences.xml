@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="always_login"
+        android:title="Selalu Login"
+        android:summary="Jika diaktifkan maka user akan selalu login"
+        android:defaultValue="false"/>
+    <EditTextPreference
+        android:key="your_name"
+        android:title="Username"
+        android:summary="Nama yang akan ditampilkan pada dashboard"/>
+    <ListPreference
+        android:key="favorite"
+        android:title="Kategori favorit"
+        android:summary="kategori yang akan muncul di Dashboard"
+        android:defaultValue="1"
+        android:entries="@array/favlist"
+        android:entryValues="@array/valist"/>
+</PreferenceScreen>
